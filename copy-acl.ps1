@@ -3,7 +3,7 @@
 #   E:\ 配下のすべてのディレクトリとファイルのACLを「不明なユーザー」から新しいユーザー "alice" にコピーする。
 
 # 1. SIDを変数に格納
-# 1. Store the SID in a variables.
+# 1. Store the SIDs in variables.
 $UnknownSID = "S-1-5-21-603978908-3508826404-3620554346-1001"  # Unknown User's SID. 不明なユーザーのSID
 $UserSID    = (Get-LocalUser -Name "alice").SID                # New user name.      新しいユーザーのユーザー名
 
